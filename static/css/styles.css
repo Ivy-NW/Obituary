@@ -1,0 +1,209 @@
+/* Base styles */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: url('../images/obit.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin: 0 0 20px 0;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-button {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+}
+
+
+form {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #666;
+    outline: none;
+}
+
+form button {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding: 12px;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: #555;
+    transform: translateY(-2px);
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    font-family: 'Lato', sans-serif;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container, form, table {
+    animation: fadeIn 0.8s ease-out;
+}
+
+
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-button {
+        margin: 5px 0;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
