@@ -14,7 +14,7 @@ JavaScript (for form validation)
 
 Setup
 1. Clone the Repository
-git clone https://github.com/Nelly-Njeri/Obituary-Management-Platform
+git clone https://github.com/Ivy-NW/obituary.git
 
 cd obituary_management_platform
 
